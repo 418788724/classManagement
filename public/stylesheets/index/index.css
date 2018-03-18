@@ -1,0 +1,93 @@
+/* 幻灯片 */
+
+/* .carousel{
+    height: 300px;
+} */
+a:hover{
+    text-decoration: none;
+}
+
+.carousel{
+    overflow: hidden;
+}
+.carousel-inner>.item>img{
+    height: 400px;
+    width: 100%;
+  }
+
+@media (min-width: 768px){
+    
+}
+
+@media (min-width: 992px){
+    .carousel{
+        height: 400px;
+    }
+    .carousel-inner>.item>img{
+        height: 400px;
+        width: 100%;
+    }
+    .carousel-control{
+        line-height: 400px;
+        font-size: 70px;
+    }
+}
+
+@media (min-width: 1200px){
+    .carousel{
+        height: 500px;
+    }
+    .carousel-inner>.item>img{
+        height: 500px;
+        width: 100%;
+    }
+    .carousel-control{
+        line-height:500px;
+        font-size: 100px; 
+    }
+}
+
+/* 班级公告 */
+
+.notice{
+    /* height: 400px; */
+    margin-top:20px; 
+    overflow: hidden;
+    border-radius: 10px;
+    background: #fff;
+    padding: 0 10px;
+}
+
+.notice>h3{
+    background: #eee;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.notice-view>a{
+    display: block;
+    border: 1px solid #fff;
+    padding: 8px 0 8px 15px;
+    border-radius: 6px;
+    background: #eee;
+    font-size: 18px;
+}
+
+.notice-view>a:hover{
+    border-radius: 10px;
+}
+
+.classIntro>h3{
+    background: #fff !important;
+    padding: 10px;
+    border-radius: 10px;background: #eee;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.classIntro>p{
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+

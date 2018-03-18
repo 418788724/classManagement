@@ -1,0 +1,16 @@
+extends ../layout/layout
+
+block content
+    div(class="container-fluid")
+        div(class="row")
+            div(class="col-sm-10 col-sm-offset-1" )
+                div(class="notice" id="notice")
+                    h1 班级公告
+                    -if(notice)
+                        h2 标题：#{notice.noticeTitle}
+                        p(class="notice-container") 内容：#{notice.noticeContent}
+                        p(class="post-infor")
+                            span(class="post-time") 发布时间:#{notice.postDate.minute}
+                            span(class="post-user") 发布人:#{notice.userName}
+                            span(class="reading") 阅读量:#{notice.pv}
+                        //- p #{notice}

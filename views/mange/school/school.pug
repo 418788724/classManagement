@@ -1,0 +1,9 @@
+h2 学籍管理
+//- include schoolForm.pug
+-if(users)
+        each user in users
+            div(class="person")
+                h1 
+                    a(href="school/"+user.username) 名字：#{user.username}
+                a(href="/mange/school/remove/"+user.username+'/'+user._id) 移除
+                p 最近登录时间：#{user.logindate.minute}

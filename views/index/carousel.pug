@@ -1,0 +1,11 @@
+if(carousels)
+    div(id="myCarousel" class="carousel slide visible-md visible-lg")
+        ol(class="carousel-indicators")
+            each value, index in carousels
+                li(data-target="#myCarousel" data-slide-to=index)     
+        div(class="carousel-inner")
+            each value, index in carousels
+                 div(class="item")
+                    img(src=value)
+        a(class="carousel-control left" href="#myCarousel" data-slide="prev") &lsaquo;
+        a(class="carousel-control right" href="#myCarousel" data-slide="next") &rsaquo;       

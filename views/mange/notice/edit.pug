@@ -1,0 +1,16 @@
+extends ../../layout/layout
+
+block content
+    //- h1= title
+    //- p Welcome to #{title}
+    //- p #{user.username}
+    div(id="wrapper")
+        div(class="container")
+            div(class="row")
+                div(class="col-lg-10 col-lg-offset-1")
+                    div(class="wrapContent" id="wrapContent")
+                        //- div(id="status")
+                        include noticeForm.pug
+    link(rel="stylesheet", href="/stylesheets/mange/mange.css")
+    script(src="/javascripts/mange/ajax.js")
+    script(src="/javascripts/mange/mange.js")

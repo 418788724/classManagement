@@ -1,0 +1,41 @@
+extends ../layout/layout
+
+block content
+    //- h1= title
+    //- p Welcome to #{title}
+    //- p #{user.username}
+    div(id="wrapper")
+        div(class="overlay")
+        nav(class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation")
+            ul(class="nav sidebar-nav" id="siderMange")
+                li(class="sidebar-brand")
+                    a(href="/mange") 后台管理
+                li
+                    a(href="/mange/notice" index="notice") 公告管理
+                        i(class="fa fa-fw fa-bullhorn")
+                li
+                    a(href="/mange/school" index="school") 学籍管理
+                        i(class="fa fa-fw fa-graduation-cap")          
+                //- li
+                //-     a(href="/mange/course" index="course") 课程管理
+                //-         i(class="fa fa-fw fa-table") 
+                li
+                    a(href="/mange/task" index="task") 作业管理
+                        i(class="fa fa-fw fa-tasks")
+                //- li
+                //-     a(href="/mange/score" index="score") 成绩管理
+                //-         i(class="fa fa-fw fa-trophy")
+        div(id="page-content-wrapper")
+            button(type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas")
+                span(class="hamb-top")
+                span(class="hamb-middle")
+                span(class="hamb-bottom")
+            div(class="container")
+                div(class="row")
+                    div(class="col-lg-10 col-lg-offset-1")
+                        div(class="wrapContent" id="wrapContent")
+                            block primary
+                            //- div(id="status")
+    link(rel="stylesheet", href="/stylesheets/mange/mange.css")
+    script(src="/javascripts/mange/ajax.js")
+    script(src="/javascripts/mange/mange.js")

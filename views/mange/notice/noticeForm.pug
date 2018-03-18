@@ -1,0 +1,21 @@
+-if(modTit)
+    h2 #{modTit.notice}
+- else
+    h2 公告修改
+div(id="status")
+p #{success}
+p #{error}
+form(class="form-horizontal" id="post_notice" method="post")
+    -if(notice)
+        input(type="text" class="form-control" name="noticeTitle" id="noticeTitle" placeholder="公告标题" maxlength="20" value=notice.noticeTitle)
+        br
+        textarea(class="form-control" name="noticeContent" id="noticeContent" rows="10" cols="100" placeholder="在这里修改文章") #{notice.noticeContent}
+        br
+        input(class="btn btn-lg" type="submit" value="修改" id="noticeChange")
+    -else
+        input(type="text" class="form-control" name="noticeTitle" id="noticeTitle" placeholder="公告标题" maxlength="20")
+        br
+        textarea(class="form-control" name="noticeContent" id="noticeContent" rows="10" cols="100" placeholder="在这里发表文章")
+        br
+        input(class="btn btn-lg" type="submit" value="发布" id="noticeSubmit")
+//- p #{notice}

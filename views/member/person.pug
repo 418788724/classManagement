@@ -1,0 +1,16 @@
+extends ../layout/layout
+
+block content
+    h2 成员页
+    p #{person}
+    -if(person)
+        div(class="person")
+            h1 名字：#{person.username}
+            p 最近登录时间：#{person.logindate.minute}
+            p 电话：#{person.number}
+            p email: #{person.email}
+            p 年龄：#{person.userage}
+            -if(superman)
+                p 老师
+            -else
+                p 学生

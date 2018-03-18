@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+    link(href="/stylesheets/bootstrap.min.css", rel="stylesheet")
+    link(href="/stylesheets/bootstrap-theme.min.css", rel="stylesheet")
+    link(href="/stylesheets/header.css", rel="stylesheet")
+    link(href='/stylesheets/style.css', rel='stylesheet')
+    link(rel="stylesheet", href="/stylesheets/chatroom/chatroom.css")
+    script(src="/javascripts/jquery.min.js")
+    script(src="/javascripts/bootstrap.min.js")
+  body
+    header 
+      include ../layout/header.pug
+    div(class="chat_wrap")
+        div(class="container chat_container")
+            div(class="row chat")
+                div(class="col-xs-3 chat_list chat")
+                    include chatlist.pug
+                div(class="col-xs-9 chat_place chat")
+                    include chatplace.pug    
+    script(src='https://cdn.socket.io/socket.io-1.4.5.js')
+    script(src="/javascripts/chatroom/chatroom.js")
+    script(src="/javascripts/script.js")
+    //- h1 这是聊天室
+    //- //- 加载socket.io模块
+    //-p(id="username") #{user.username}

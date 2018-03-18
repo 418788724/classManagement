@@ -1,0 +1,129 @@
+
+.chat_wrap{
+    height: 90%;
+    width: 100%;
+    background-image: url('/images/chatbg.png');
+    background-size: cover;
+    overflow: hidden;
+    position: absolute;  
+    top: 50px;  
+    bottom: 0px;  
+}
+
+.chat_container{
+    height: 100%;
+    background: rgb(231, 231, 231);
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+.chat{
+    height: 100%;
+    border-radius: 10px;
+}
+
+.chat_list{
+    background-color: rgb(53, 71, 77);
+}
+
+.search_input{
+    height: 15%;
+    padding-top: 10%;
+}
+
+.search_list{
+    height: 85%;
+    
+}
+::-webkit-scrollbar{
+    display:none;
+  }
+.search_list>.userOne{
+    padding: 5px;
+    background: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.search_list>.userOne:hover{
+    background: rgb(156, 155, 155)
+}
+.search_list>.userOne>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.gray { 
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+.msg_his{
+    height: 75%;
+    background-color: rgb(184, 181, 179);
+    border-radius: 10px;
+}
+.msg_his>h4{
+    background: rgb(51, 203, 223);
+    text-align: center;
+    margin: 0;
+    padding:5px 0;
+    border-radius: 10px 10px 0 0;
+    z-index: -999;
+}
+.msg_container{
+    height: 90%;
+    overflow-y: scroll;
+}
+.msg-sendcont{
+    margin: 20px 0;
+}
+.msgBubble {
+    display: inline-block;
+    max-width: 300px;
+    min-width: 100px;
+    word-wrap: break-word;
+    position: relative;
+    /* margin: 20px 10px; */
+    background: #f8ac09;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.msgBubble:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    right: 100%;
+    top: 10px;
+    border-top: 5px solid transparent;
+    border-right: 10px solid #f8ac09;
+    border-bottom: 5px solid transparent;
+}
+
+.userBubble{
+    display: inline-block;
+    padding: 10px;
+    float: left;
+}
+.noticeBubble{
+    text-align: center;
+    margin: 20px 0;
+}
+.noticeBubble>span{
+    padding: 5px;
+    background: rgb(44, 44, 44);
+    color:#fff;
+    border-radius: 20px;
+}
+.msg_input{
+    height: 25%;
+}
+.msg_input>form>.form-group>textarea{
+    height: 90px;
+    
+}

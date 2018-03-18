@@ -1,0 +1,117 @@
+/*公共样式*/
+
+*{  
+  margin: 0;  
+  padding: 0;  
+  -moz-box-sizing: border-box;  
+  -webkit-box-sizing: border-box;  
+  box-sizing: border-box;  
+}  
+html {  
+  height:100%;  
+}  
+
+body {
+  background: #eee;
+  padding-top: 50px;
+  min-height: 100%;  
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  position: relative;
+}
+
+a {
+  color: #00B7FF;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.border-block{
+  border:1px solid #000;
+}
+
+input,textarea{
+  outline-color: none;
+}
+
+.person.list-unstyled.nav>li>a>img{
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.contain{
+  padding-bottom:130px;
+}
+
+footer{
+  background: rgb(44, 44, 44);
+  color: aliceblue;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:100px;
+}
+
+/*发布时间，发布人，阅读量公共样式*/
+.post-infor{
+  padding: 2px;
+}
+.post-time{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.post-user{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.reading{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.taskpost-num{
+  
+}
+/*公告,作业公共样式*/
+.notice>h1,
+.task>h1{
+  display: inline-block;
+  padding: 5px 20px;
+  border: 2px solid #00B7FF;
+  border-radius: 5px;
+}
+.notice>h2,
+.task>h2{
+  padding: 10px; 
+  background: rgb(82, 122, 156);
+  border-radius: 10px;
+}
+
+.notice-one,.task-one{
+  padding: 1px 15px 10px;
+  background: #FFF;
+  margin-top:5px;
+  border-radius: 5px;
+}
+
+.notice-container, .task-container{
+  padding: 10px;
+  font-size: 2em;
+  background: #FFF;
+}
+
+/*作业页*/
+.task-list{
+  padding: 10px;
+  background: #FFF;
+  border-radius: 10px;
+}
+.task-list>li{
+  list-style: none;
+  margin-top:5px; 
+  font-size: 18px;
+}

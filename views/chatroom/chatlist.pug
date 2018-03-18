@@ -1,0 +1,10 @@
+div(class="search_input")
+//-     div(class="input-group")
+//-         input(type="text" class="form-control input-lg" placeholder="请输入昵称查找")
+//-         span(class="input-group-addon btn btn-default") 搜索
+ul(class="search_list list-unstyled" id="userList")
+    - if(users)
+        each u in users
+            li(class="userOne" data-id=u._id) 
+                img(class="gray" src='/'+u.avatar id=u._id)
+                span #{u.username}

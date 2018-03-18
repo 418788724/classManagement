@@ -1,0 +1,15 @@
+extends ../layout/layout
+
+block content
+    h2(class="text-center") 聊天室
+    //-p #{users}
+    div(class="container-fluid")
+        div(class="row")
+            div(class="col-md-2")
+                include memberList.pug
+            div(class="col-md-10")
+                include chatroom.pug
+                
+
+
+

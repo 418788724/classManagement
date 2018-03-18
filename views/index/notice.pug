@@ -1,0 +1,11 @@
+div(class="notice" id="notice")
+    h3 班级公告
+    -if(notices)
+        each notice in notices
+            div(class="notice-view")
+                a(href="notice/"+notice.userName+"/"+notice.noticeTitle+"/"+notice._id) #{notice.noticeTitle}>>
+                p 
+                    span(class="postTime") 发布时间：#{notice.postDate.minute}
+                    span(class="postPerson") 发布人：#{notice.userName}
+        p 
+            a(href="/notice" class="btn btn-primary") 更多

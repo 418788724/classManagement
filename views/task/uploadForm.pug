@@ -1,0 +1,11 @@
+h2 提交作业
+//- action='/task/uptask'
+form(method='post' enctype='multipart/form-data' class="main-title form-horizontal" role="form")
+        div(class="form-group")
+            label(for="task" class="col-sm-2 control-label")
+            div(class="col-sm-10")
+                input(type="file" class="btn btn-default" name="task" id="task")
+                input(type="hidden" name="publisher" class="publisher" id="publisher" value=task._id)
+        div(class="form-group")
+            div(class="col-sm-offset-2 col-sm-10")
+                input(type="button" class="btn btn-default" id="uptask" value="上传作业")

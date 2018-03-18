@@ -1,0 +1,26 @@
+extends ../layout/layout
+
+block content
+    div(class="container-fluid")
+        div(class="row")
+            div(class="col-sm-10 col-sm-offset-1" )
+                div(class="notice" id="notice")
+                    h2 班级公告
+                    -if(notices)
+                        each notice in notices
+                            div(class="notice-one")
+                                h3 
+                                    a(href="/notice/"+notice.userName+"/"+notice.noticeTitle+"/"+notice._id) 标题：#{notice.noticeTitle}
+                                p 内容：#{notice.noticeContent}
+                                p(class="post-infor")
+                                    span(class="post-time") 发布时间:#{notice.postDate.minute}
+                                    span(class="post-user") 发布人:#{notice.userName}
+                                    span(class="reading") 浏览量:#{notice.pv}次
+                    //- p #{notices.length}
+                    p 当前页数：#{page}
+                    p 总共#{total}条公告
+                    div
+                        -if(!isFirstPage)
+                            a(class="btn btn-lg btn-success" href="?page="+(page-1)) 上一页
+                        -if(!isLastPage)
+                            a(class="btn btn-lg btn-success" href="?page="+(page+1)) 下一页

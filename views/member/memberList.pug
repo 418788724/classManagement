@@ -1,0 +1,11 @@
+-if(users)
+    ul(class="person list-unstyled nav")
+        each user in users
+            li
+                a(href="member/"+user.username) 
+                    img(src=user.avatar)
+                    span #{user.username}
+            //-p 最近登录时间：#{user.logindate.minute}
+            //- p email：#{notice.noticeContent}
+            //- span 发布时间：#{notice.postDate.minute}
+            //- span 发布人：#{notice.userName}

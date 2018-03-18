@@ -1,0 +1,19 @@
+h2 作业管理
+div(class="task-mange" id="task")
+    -if(tasks)
+        each task in tasks
+            h1 
+                a(href="/task/"+task.userName+"/"+task.taskTitle) 标题：#{task.taskTitle}
+            a(href="/mange/task/edit/"+task.userName+"/"+task.taskTitle) 编辑   |   
+            a(href="/mange/task/remove/"+task.userName+"/"+task.taskTitle+"/"+task._id) 删除
+            //- p 内容：#{task.taskContent}
+            span 发布时间：#{task.postDate.minute}
+            span 发布人：#{task.userName}
+            span 浏览了#{task.pv}次
+    p 当前页数：#{page}
+    p 总共#{total}条作业
+div
+    -if(!isFirstPage)
+        a(href="?page="+(page-1)) 上一页
+    -if(!isLastPage)
+        a(href="?page="+(page+1)) 下一页

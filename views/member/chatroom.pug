@@ -1,0 +1,9 @@
+h2 聊天
+//- form(method="post" action="/chatroom" class="main-title form-horizontal" role="form")
+//-     input(type="hidden" class="form-control" id="username" name="userId" value=user._id)
+//-     div(class="form-group")
+//-         div(class="col-sm-offset-2 col-sm-10")
+//-             input(type="submit" class="btn btn-default" value="进入聊天")
+a(href="/chatroom?username="+escape(user.username)+"&userId="+user._id+"&avatar="+escape(user.avatar) class="btn btn-default") 进入聊天
+//-a(href="/chatroom?user="+ escape(JSON.stringify(user)) class="btn btn-default") 进入聊天
+
