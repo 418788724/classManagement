@@ -34,13 +34,15 @@ $(function () {
     $(function () {
         //成功提示
         function SuccessMes(data) {
-            document.getElementById("status").innerHTML += "<p style='color:green; font-weight:bold;'>服务器返回信息: " + data + "</p>";
+            //document.getElementById("status").innerHTML += "<p style='color:green; font-weight:bold;'>服务器返回信息: " + data + "</p>";
+            alert(data);
             $("#noticeTitle").val('');
             $("#noticeContent").val('');
         }
         //失败提示
         function ErrorMes(){
-            document.getElementById("status").innerHTML += "<p style='color:#C00000; font-weight:bold;'>连接不到服务器，请检查网络！</p>";
+            alert(data);
+            //document.getElementById("status").innerHTML += "<p style='color:#C00000; font-weight:bold;'>连接不到服务器，请检查网络！</p>";
         }
         //发布公告
         $('#noticeSubmit').on('click', function (e) {
