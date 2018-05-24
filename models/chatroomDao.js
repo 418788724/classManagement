@@ -10,7 +10,7 @@ var MsgSchema = new Schema({
 var Msg = mongoose.model('Msg', MsgSchema);
 
 /**
- * git momobranch
+ * git in momobranch  
  */
 
 module.exports = Msg;
