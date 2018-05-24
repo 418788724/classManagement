@@ -1,4 +1,4 @@
-# classManagement
+# classManagement cm1.0版本
 ## node环境
 #### 采用express+mongoDB+Bootstrap+jQuery简单实现，UI和交互做的很laji,供自己学习参考
 Dissertation
