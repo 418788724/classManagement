@@ -20,7 +20,7 @@ var test = require('./routes/test');
 
 var settings = require('./settings');
 var flash    = require('connect-flash');
-//把会话信息存储于数据库中
+//把会话信息存储于数据库中哦
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
 
