@@ -1,10 +1,6 @@
 var mongoose = require('./db');
 var Schema = mongoose.Schema;
 
-/**
- * 聊天室保存
- */
-
 var MsgSchema = new Schema({
     msgUser: {type: String},  //发消息用户名
     msgContent: {type: String}, //消息内容
@@ -12,5 +8,9 @@ var MsgSchema = new Schema({
 });
 
 var Msg = mongoose.model('Msg', MsgSchema);
+
+/**
+ * git
+ */
 
 module.exports = Msg;
